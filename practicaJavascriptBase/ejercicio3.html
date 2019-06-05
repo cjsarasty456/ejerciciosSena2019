@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenar</title>
+    <!-- En este ejercicio vamos a separar los comandos Javascript
+    del archivo Html -->
+    <script src="js/ejercicio3.js" type="text/Javascript"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" class="form-control">
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input id="apellido" type="text" class="form-control">
+        <br>
+        <button onclick="concatenar();" class="btn btn-dark">Concatenar</button>
+        <br>
+        <label for="resultado">Resultado</label>
+        <input id="resultado" type="text" class="form-control" disabled>
+    </div>
+
+    
+</body>
+</html>

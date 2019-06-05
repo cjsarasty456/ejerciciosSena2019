@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <!-- Incorporar los archivos de Bootstrap -->
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+    </head>
+    <body>
+        <header>
+            <!-- navbar-dark es el estilo y color de los elementos -->
+            <!-- bg-dark configura el estilo y color de la barra de navegación -->
+                <nav class="navbar navbar-dark bg-dark navbar-expand-md" >
+                    <a class="navbar-brand" href="index.html">Nombre del Sitio</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="registro.html">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listaregistro.html">
+                                Lista Registros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">
+                                Galería
+                            </a>
+                        </li>
+                    </div>
+                </nav>
+        </header>
+        <div class="container">
+            <form>
+                <div class="row">
+                    <!-- la etiqueta div con clase form-group sirve para agrupar los elementes
+                    del campo -->
+                    <!-- la clase form-control ajusta el estilo de los elementos -->
+                        <div class="col col-xl-6 col-md-6 col-12">
+                        <div class="form-group">
+                            <label for="CampoNombre">Nombres:</label>
+                            <input id="CampoNombre" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col col-xl-6 col-md-6 col-12">
+                        <div class="form-group">
+                            <label for="CampoApellidos">Apellidos:</label>
+                            <input id="CampoApellidos" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col col-xl-6 col-md-6 col-12">
+                        <div class="form-group">
+                            <label for="CampoDireccion">Dirección:</label>
+                            <input id="CampoDireccion" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col col-xl-6 col-md-6 col-12">
+                        <div class="form-group">
+                            <label for="CampoTelefono">Telefono:</label>
+                            <input id="CampoTelefono" type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <!-- clase btn ajusta el estilo de los botones -->
+                <input type="button" value="Registrar" class="btn btn-success" onclick="AgregarRegistro();">
+                <input type="button" value="Editar" class="btn btn-warning" onclick="EditarRegistro();">
+            </form>
+            <br>
+            <div id="Mensaje"></div>
+        </div>
+    </body>
+</html>
+<script>
+    function AgregarRegistro(){
+        var Mensaje='<div class="alert alert-success alert-dismissible fade show" role="alert">'+
+            '<strong>Guardado Correctamente!</strong> El registro se guardo correctamente.'+
+            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+            '<span aria-hidden="true">&times;</span>'+
+            '</button>'+
+            '</div>';
+        document.getElementById('Mensaje').innerHTML=Mensaje;
+    }
+    function EditarRegistro(){
+        var Mensaje='<div class="alert alert-info alert-dismissible fade show" role="alert">'+
+            '<strong>Editando Registro!</strong>'+
+            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+            '<span aria-hidden="true">&times;</span>'+
+            '</button>'+
+            '</div>';
+        document.getElementById('Mensaje').innerHTML=Mensaje;
+        document.getElementById('CampoNombre').value='Jarret'
+        document.getElementById('CampoApellidos').value='Johnson'
+        document.getElementById('CampoDireccion').value='91923 Tillman Park'
+        document.getElementById('CampoTelefono').value='(516) 949-4824'
+    }
+</script>

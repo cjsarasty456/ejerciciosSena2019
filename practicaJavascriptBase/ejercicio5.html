@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>varios</title>
+    <script src="js/ejercicio5.js"></script>
+    <!-- Incorporar los archivos de Bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <div class="container-fluid">
+         <div class="row">
+            <div class="col col-xl-6 col-md-6 col-sm-12 col-12">
+                <!-- 
+                este ejercicio vamos a utilizar condiciones para calcular
+                -->
+                <h1>Calculadora: </h1>
+                <label for="num1">Número 1: </label>
+                <input id="num1" type="number" class="form-control" required>
+                <label for="num2">Número 2: </label>
+                <input id="num2" type="number" class="form-control" required>
+                <br>
+                <button onclick="sumar();" class="btn btn-success">+</button>
+                <button onclick="restar();" class="btn btn-danger">-</button>
+                <button onclick="multiplicar();" class="btn btn-dark">*</button>
+                <button onclick="dividir();" class="btn btn-warning">/</button>
+                <br>
+                <label for="resultado">Resultado: </label>
+                <input id="resultado" type="text" class="form-control" disabled>
+            </div>
+            <div class="col col-xl-6 col-md-6 col-sm-12 col-12">
+                <h1>Formulario:</h1>
+                <label for="nombres">Nombres: </label>
+                <input id="nombres" type="text" class="form-control">
+                <label for="apellidos">Apellidos: </label>
+                <input id="apellidos" type="text" class="form-control">
+                <label for="correo">Correo Electronico: </label>
+                <input id="correo" type="email" class="form-control">
+                <br>
+                <button type="button" onclick="Registrar();" class="btn btn-success">Registrar</button>
+                <div id="contenedorMensaje"></div>
+            </div>
+        </div>
+        <br>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        Nombres
+                    </th>
+                    <th>
+                        Apellidos
+                    </th>
+                    <th>
+                        Correo Electronico
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tabla" >
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

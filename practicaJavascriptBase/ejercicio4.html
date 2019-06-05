@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Condiciones</title>
+    <script src="js/ejercicio4.js"></script>
+    <!-- Incorporar los archivos de Bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 
+        este ejercicio vamos a utilizar condiciones para calcular
+     -->
+     <div class="container">
+        <h1>Número Mayor: </h1>
+        <label for="num1">Número 1: </label>
+        <input id="num1" type="number" class="form-control" required>
+        <label for="num2">Número 2: </label>
+        <input id="num2" type="number" class="form-control" required>
+        <br>
+        <button onclick="numeroMayor();" class="btn btn-success">Enviar</button>
+        <br>
+        <label for="mayor">Número Mayor: </label>
+        <input id="mayor" type="number" class="form-control" disabled>
+    </div>
+    
+</body>
+</html>
