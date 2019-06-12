@@ -47,12 +47,8 @@ function IniciarSesión(){
                 }
             },
             error: function(data){
-                alert("error "+data[Mensaje]);
+                alert("error ");
             }
-        // }).done(function(){
-        //     alert("correcto");
-        // }).fail(function(data){
-        //     alert("error "+data);
         });
 
     }else{

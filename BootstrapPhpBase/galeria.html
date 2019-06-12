@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <!-- Incorporar los archivos de Bootstrap -->
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+    </head>
+    <body>
+        <header>
+            <!-- navbar-dark es el estilo y color de los elementos -->
+            <!-- bg-dark configura el estilo y color de la barra de navegación -->
+                <nav class="navbar navbar-dark bg-dark navbar-expand-md" >
+                    <a class="navbar-brand" href="index.html">Nombre del Sitio</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registro.html">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listaregistro.html">
+                                Lista Registros
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="galeria.html">
+                                Galería
+                            </a>
+                        </li>
+                    </div>
+                </nav>
+        </header>
+        <div class="container">
+            <div id="Galeria" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#Galeria" data-slide-to="0" class="active"></li>
+                    <li data-target="#Galeria" data-slide-to="1"></li>
+                    <li data-target="#Galeria" data-slide-to="2"></li>
+                    <li data-target="#Galeria" data-slide-to="3"></li>
+                    <li data-target="#Galeria" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="media/img/img1.png" class="d-block w-100" alt="img1" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/img/img2.jpg" class="d-block w-100" alt="img2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/img/img3.jpg" class="d-block w-100" alt="img3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/img/img4.jpg" class="d-block w-100" alt="img4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/img/img5.png" class="d-block w-100" alt="img5">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#Galeria" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#Galeria" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="row">
+                <div class="col col-xl-3 col-md-6 col-xs-12 col-12">
+                    <div class="card" style="width: 100%;">
+                        <img src="media/img/img1.png" class="card-img-top" alt="img" style="width: 100%; height: 150px;">
+                        <div class="card-body">
+                            <h5 class="card-title">est</h5>
+                            <p class="card-text">Libero ut aliquid at soluta voluptatum magnam maiores ipsa.</p>
+                            <a href="#" class="btn btn-primary">Registrar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-xl-3 col-md-6 col-xs-12 col-12">
+                    <div class="card" style="width: 100%;">
+                        <img src="media/img/img2.jpg" class="card-img-top" alt="img" style="width: 100%; height: 150px;">
+                        <div class="card-body">
+                            <h5 class="card-title">nihil</h5>
+                            <p class="card-text">Libero ut aliquid at soluta voluptatum magnam maiores ipsa.</p>
+                            <a href="#" class="btn btn-danger">Registrar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-xl-3 col-md-6 col-xs-12 col-12">
+                    <div class="card" style="width: 100%;">
+                        <img src="media/img/img3.jpg" class="card-img-top" alt="img" style="width: 100%; height: 150px;">
+                        <div class="card-body">
+                            <h5 class="card-title">perferendis</h5>
+                            <p class="card-text">Libero ut aliquid at soluta voluptatum magnam maiores ipsa.</p>
+                            <a href="#" class="btn btn-warning">Registrar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-xl-3 col-md-6 col-xs-12 col-12">
+                    <div class="card" style="width: 100%;">
+                        <img src="media/img/img4.jpg" class="card-img-top" alt="img" style="width: 100%; height: 150px;">
+                        <div class="card-body">
+                            <h5 class="card-title">iste</h5>
+                            <p class="card-text">Libero ut aliquid at soluta voluptatum magnam maiores ipsa.</p>
+                            <a href="#" class="btn btn-info">Registrar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </body>
+</html>

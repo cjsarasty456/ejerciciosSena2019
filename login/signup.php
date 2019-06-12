@@ -1,0 +1,20 @@
+                <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+</head>
+<body>
+    <form action="registrarUsuario.php" method="post">
+        <label for="CampoCorreo"> Correo Electronico:</label>
+        <input type="email" id="CampoCorreo" name="correo" >
+        <label for="CampoUsario"> Nombre Usuario:</label>
+        <input type="text" id="CampoUsario" name="usuario" >
+        <label for="CampoContrasena"> Contraseña:</label>
+        <input type="text" id="CampoContrasena" name="contrasena" >
+        <label for="CampoConfirmContrasena"> Confirmar Contraseña:</label>
+        <input type="text" id="CampoConfirmContrasena" name="confirmContrasena">
+        <input type="submit" class="btn btn-success" value="Registrar">     
+    </form>
+</body>
+</html>
