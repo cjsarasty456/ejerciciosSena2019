@@ -4,6 +4,8 @@ if($Funcion=="login"){
     login();
 }else if($Funcion=="ComprobarUsuario"){
     ComprobarUsuario();
+}else if($Funcion=='CerrarSesion'){
+    CerrarSesion();
 }
 function login(){
     session_start();
@@ -36,12 +38,15 @@ function ComprobarUsuario(){
          );
      }else{
         $Retorno=array(
-            "SesionExitente"=>"false"
+            "SesionExitente"=>false
         );
      }
      echo json_encode($Retorno);
 }
 function CerrarSesion(){
-    unset($_COOKIE['AoIuser']); 
+    setcookie("idUsuer","",0);
+    setcookie("CorreoElectronico","",0);
+    session_write_close();
+    echo "ok";
 }
 ?>

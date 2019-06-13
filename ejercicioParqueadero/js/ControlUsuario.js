@@ -35,7 +35,7 @@ function CerrarSesion(){
         //Cambiar a type: POST si necesario
         type: 'POST',
         // Formato de datos que se espera en la respuesta
-        dataType: 'json',
+        // dataType: 'text',
         // URL a la que se enviará la solicitud Ajax
         url: 'controlusuario.php',
         success: function(data){
