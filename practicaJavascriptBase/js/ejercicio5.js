@@ -55,9 +55,8 @@ function verificarDatos(){
     }else{
         CampoApellidos.setAttribute("class","form-control is-valid");
     }
-    //validación del correo electronico
-    var condicion=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    if (condicion.test(CampoCorreo.value)){
+    //validación del correo electrónico
+    if (/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(CampoCorreo.value)){
         CampoCorreo.setAttribute("class","form-control is-valid");
        } else {
         CampoCorreo.setAttribute("class","form-control is-invalid");
