@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-md" >
+            <a class="navbar-brand" href="#">Nombre del sitio</a>
+            <button class="navbar-toggler" type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" 
+            id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="index.html">Registro</a>
+                    </li>
+                </ul>  
+            </div>
+            </nav>
+    </header>
+    <div class="container-fluid">
+
+            <div id="Galeria" class="carousel slide" 
+            data-ride="carousel" style="width: 50%;height: auto;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#Galeria" data-slide-to="0" 
+                        class="active"></li>
+                        <li data-target="#Galeria" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="media/img/img1.png" 
+                            class="d-block w-100" alt="img1" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/img/img2.png" class="d-block w-100" alt="img2" >
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#Galeria" 
+                    role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" 
+                        aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#Galeria" 
+                    role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" 
+                        aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+            </div>
+
+    </div>
+
+    
+    
+</body>
+</html>

@@ -3,7 +3,7 @@ function numeroMayor(){
     var campoResult=document.getElementById('mayor');
     num1=document.getElementById('num1').value;
     num2=document.getElementById('num2').value;
-    if(num1>num2){
+    if(num1>=num2){
         campoResult.value=num1;
     }else{
         campoResult.value=num2;
