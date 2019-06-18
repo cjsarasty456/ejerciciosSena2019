@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/unicornio.css">
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Registro</title>
+    </head>
+    <body>
+        <header>
+                <nav class="navbar navbar-dark bg-dark navbar-expand-md" >
+                    <a class="navbar-brand" href="index.html">VAVU</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registrar.html">Registro</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="listar-de-registro.html">
+                                Lista de Registros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">
+                                Galería
+                            </a>
+                        </li>
+                    </div>
+                </nav>
+        </header>
+        <div class="container-fluid">
+            <table class="table table-hover ">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Dirección</th>
+                        <th>Telefono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla">
+                    <tr>
+                        <td>Valeria</td>
+                        <td>Patiño</td>
+                        <td>calle 27</td>
+                        <td>456-345-345</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="BtnAcciones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Acciones
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Editar</a>
+                                    <a class="dropdown-item" href="#">Eliminar</a>
+                                    <a class="dropdown-item" href="#">Deshabilitar</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pepito</td>
+                        <td>Suarez</td>
+                        <td>calle 45</td>
+                        <td>567-678-678</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="BtnAcciones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Acciones
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Editar</a>
+                                    <a class="dropdown-item" href="#">Eliminar</a>
+                                    <a class="dropdown-item" href="#">Deshabilitar</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Calle</td>
+                        <td>calle 12</td>
+                        <td>123-456-678</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="BtnAcciones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Acciones
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Editar</a>
+                                    <a class="dropdown-item" href="#">Eliminar</a>
+                                    <a class="dropdown-item" href="#">Deshabilitar</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Deniss</td>
+                        <td>Aristizabal</td>
+                        <td>calle 34</td>
+                        <td>123-567-345</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="BtnAcciones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Acciones
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Editar</a>
+                                    <a class="dropdown-item" href="#">Eliminar</a>
+                                    <a class="dropdown-item" href="#">Deshabilitar</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Camilo</td>
+                        <td>Valencia</td>
+                        <td>cale 13</td>
+                        <td>123-456-234</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="BtnAcciones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Acciones
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Editar</a>
+                                    <a class="dropdown-item" href="#">Eliminar</a>
+                                    <a class="dropdown-item" href="#">Deshabilitar</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</body>
+</html>
