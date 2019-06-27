@@ -1,0 +1,5 @@
+primero se diseña pagina de inicio de sesión
+abrir una ventana del terminal o cmd
+abrir la carpeta donde esta el proyecto
+ejecutar composer require hybridauth/hybridauth
+se crea la dirección App/Auth/ en ella creamos los archivos Auth.php y config.php
