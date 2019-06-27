@@ -43,25 +43,16 @@ function IniciarSesión(){
                 if(data["Respuesta"]=="Ok"){
                     location.href="index.html";
                 }else{
-                    Mensaje(data["Mensaje"]);
+                    Mensaje("Error inicio sesión!" ,data["Mensaje"]);
                 }
             },
             error: function(data){
-                alert("error ");
+                Mensaje("¡Error!",data);
             }
         });
 
     }else{
-        Mensaje("Competa todos los campos");
+        Mensaje("¡Error de valicación!","El formulario no cumple todas las validaciones");
     }
 
-}
-function Mensaje(texto){
-    var mensaje="<div class='alert alert-danger alert-danger fade show' role='alert'>"+
-                    "<strong>Error inicio sesión!</strong> "+texto+
-                    "<button type='button' class='close' data-dismiss='alert' aria-label='Close'>"+
-                    "<span aria-hidden='true'>&times;</span>"+
-                    "</button>"+
-                    "</div>";
-    document.getElementById('mensaje').innerHTML=mensaje;
 }

@@ -4,8 +4,8 @@ function Registrio($CorreoElectronico,$Contrasena){
     include('conexionDb.php');
     $Consulta=mysqli_fetch_array(ConsultarUsuario($CorreoElectronico));
     if(!isset($Consulta)){
-        $sql="INSERT INTO registrousuarios (CorreoElectronico, Contrasena) 
-        VALUES ('$CorreoElectronico', '$Contrasena')";
+        $sql="INSERT INTO registrousuarios (id,CorreoElectronico, Contrasena) 
+        VALUES (UUID(),'$CorreoElectronico', '$Contrasena')";
         $resultado=mysqli_query($Conexion,$sql);
         if(!$resultado){
             die("Error al Registrar");  

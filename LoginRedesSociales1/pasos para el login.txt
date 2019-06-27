@@ -1,0 +1,12 @@
+pasos para autenticar con google:
+entrar a google developers console.
+crear un proyecto
+credenciales crear un id de cliente OAuth
+se debe configurar pantalla de autorización
+se crea la credencial
+se inicia con el proyecto web en php
+se modifica el API se crea el redireccionamiento autorizado
+se debe instalar el programa composer
+se abre una ventana del terminal
+se abre la carpeta del proyecto 
+se ejecuta la linea composer require google/apiclient

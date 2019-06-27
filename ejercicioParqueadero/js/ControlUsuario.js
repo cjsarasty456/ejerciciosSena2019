@@ -1,4 +1,5 @@
 function InicioPagina(){
+    // BarraNavegacion();
     var params = {
         "Funcion" : "ComprobarUsuario"
     };
@@ -46,3 +47,17 @@ function CerrarSesion(){
         }
     });
 }
+function Configuracion(){
+    location.href="Configuracion.html";
+}
+// function BarraNavegacion(){
+//     var Barra=document.getElementById('ListaElementos');
+//     var Item=document.createElement('li');
+//     Item.className="nav-item";
+//     var Enlace=document.createElement('a');
+//     Enlace.className="nav-link";
+//     Enlace.innerHTML="Inicio";
+//     Enlace.href="index.html";
+//     Item.appendChild(Enlace);
+//     Barra.appendChild(Item);
+// }
