@@ -37,35 +37,67 @@ function dividir(){
     }
 }
 
-function verificarDatos(){
-    ErrorCamposObligatorios=0;
+function VerificarNombre(){
     CampoNombres=document.getElementById('nombres');
-    CampoApellidos=document.getElementById('apellidos');
-    CampoCorreo=document.getElementById('correo');
     if(CampoNombres.value==""){
         CampoNombres.setAttribute("class","form-control is-invalid");
         return false;
     }else{
         CampoNombres.setAttribute("class","form-control is-valid");
+        return true;
     }
+}
+function VerificarApellido(){
+    CampoApellidos=document.getElementById('apellidos');
     if(CampoApellidos.value==""){
         CampoApellidos.setAttribute("class","form-control is-invalid");
         return false;
         
     }else{
         CampoApellidos.setAttribute("class","form-control is-valid");
+        return true;
     }
+}
+function VerificarCorreo(){
+    CampoCorreo=document.getElementById('correo');
     //validación del correo electrónico
     if (/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(CampoCorreo.value)){
         CampoCorreo.setAttribute("class","form-control is-valid");
-       } else {
+        return true;
+    } else {
         CampoCorreo.setAttribute("class","form-control is-invalid");
         return false;
-       }
-       return true;
+    }
 }
+
+// function verificarDatos(){
+//     CampoNombres=document.getElementById('nombres');
+//     CampoApellidos=document.getElementById('apellidos');
+//     CampoCorreo=document.getElementById('correo');
+//     if(CampoNombres.value==""){
+//         CampoNombres.setAttribute("class","form-control is-invalid");
+//         return false;
+//     }else{
+//         CampoNombres.setAttribute("class","form-control is-valid");
+//     }
+//     if(CampoApellidos.value==""){
+//         CampoApellidos.setAttribute("class","form-control is-invalid");
+//         return false;
+        
+//     }else{
+//         CampoApellidos.setAttribute("class","form-control is-valid");
+//     }
+//     //validación del correo electrónico
+//     if (/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(CampoCorreo.value)){
+//         CampoCorreo.setAttribute("class","form-control is-valid");
+//        } else {
+//         CampoCorreo.setAttribute("class","form-control is-invalid");
+//         return false;
+//        }
+//        return true;
+// }
 function Registrar(){
-    if (verificarDatos()){
+    if (VerificarNombre() && VerificarApellido() && VerificarCorreo()){
         var tabla=document.getElementById('tabla');
         var nuevoRegistro=document.createElement("tr");
         var celdaNombre=document.createElement("td");

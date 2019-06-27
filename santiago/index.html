@@ -1,0 +1,16 @@
+<h1>
+    carlos
+</h1>
+REGISTRAR
+INSERT INTO registro (email, nombreUsuario, contrasena) VALUES ('forero@gmail.com','forero','123')
+INSERT INTO registro (email, nombreUsuario, contrasena) VALUES ('posada@gmail.com','posada','123')
+INSERT INTO registro (email, nombreUsuario, contrasena) VALUES ('dilan@gmail.com','dilan','123')
+
+ENCONTRAR
+SELECT * FROM `registro` WHERE nombreUsuario='dilan' && contrasena='123'
+
+CAMBIO DE CONTRASEÑA
+UPDATE registro SET contrasena='hola' WHERE nombreUsuario='dilan'
+
+BORRAR
+DELETE FROM registro WHERE nombreUsuario='dilan'

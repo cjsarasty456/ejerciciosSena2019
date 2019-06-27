@@ -36,11 +36,11 @@
             <div class="col col-xl-6 col-md-6 col-sm-12 col-12">
                 <h1>Formulario:</h1>
                 <label for="nombres">Nombres: </label>
-                <input id="nombres" type="text" class="form-control">
+                <input id="nombres" type="text" class="form-control" oninput="VerificarNombre();" >
                 <label for="apellidos">Apellidos: </label>
-                <input id="apellidos" type="text" class="form-control">
+                <input id="apellidos" type="text" class="form-control" oninput="VerificarApellido();">
                 <label for="correo">Correo Electronico: </label>
-                <input id="correo" type="email" class="form-control">
+                <input id="correo" type="email" class="form-control" oninput="VerificarCorreo();">
                 <br>
                 <button type="button" onclick="Registrar();" class="btn btn-success">Registrar</button>
                 <div id="contenedorMensaje"></div>
