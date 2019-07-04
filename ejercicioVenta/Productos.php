@@ -3,8 +3,10 @@ $Funcion="";
 if(isset($_POST['Funcion'])){
     $Funcion=$_POST['Funcion'];
 }
-if($Funcion){
+if($Funcion=="GuardarProducto"){
     GuardarProducto();
+}else if($Funcion=="ConsultarListaProducto"){
+    ConsultaListaProductos();
 }
 
 function GuardarProducto(){
@@ -14,6 +16,12 @@ function GuardarProducto(){
     $Descripcion=$_POST['DescripcionProducto'];
     $Cantidad=(int)$_POST['CantidadProducto'];
     RegistroProducto($Codigo,$Nombre,$Descripcion,$Cantidad);
+}
+
+function ConsultaListaProductos(){
+    include('model/RegistroProducto.php');
+    $Consulta=ConsultaListaProducto();
+    echo json_encode($Consulta);
 }
    
 
