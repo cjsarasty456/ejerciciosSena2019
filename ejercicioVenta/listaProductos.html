@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="/sena/ejercicioVenta/css/bootstrap.min.css">
+    <script src="/sena/ejercicioVenta/js/popper.min.js"></script>
+    <script src="/sena/ejercicioVenta/js/jquery-3.3.1.min.js"></script>
+    <script src="/sena/ejercicioVenta/js/bootstrap.min.js"></script>
+    <script src="/sena/ejercicioVenta/js/navegacion.js"></script>
+    <script src="/sena/ejercicioVenta/js/ControlUsuario.js"></script>
+</head>
+<body onload="InicioPagina();">
+    <header>
+        <!-- navbar-dark es el estilo y color de los elementos -->
+        <!-- bg-dark configura el estilo y color de la barra de navegación -->
+            <nav class="navbar navbar-dark bg-dark navbar-expand-md" >
+                <a class="navbar-brand" href=" /sena/ejercicioVenta/">Parqueadero</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/sena/ejercicioVenta/">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/sena/ejercicioVenta/listaProductos.html">Lista Productos</a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav ">
+                        <div class="btn-group">
+                            <button id="NombreUsuario" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                <button class="dropdown-item" type="button" onclick="IngresoConfiguracion();">Configuración</button>
+                                <button class="dropdown-item" type="button" onclick="CerrarSesion();">Cerrar Sesión</button>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <h1>Lista de Productos</h1>
+    <hr>
+    <a href="GuardarProductos.html" class="btn btn-success">Agregar Productos</a>
+    <br>
+    <br>
+    <table class="table hover">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+    </table>
+
+</body>
+</html>

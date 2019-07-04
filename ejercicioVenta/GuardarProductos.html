@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="/sena/ejercicioVenta/css/bootstrap.min.css">
+    <script src="/sena/ejercicioVenta/js/popper.min.js"></script>
+    <script src="/sena/ejercicioVenta/js/jquery-3.3.1.min.js"></script>
+    <script src="/sena/ejercicioVenta/js/bootstrap.min.js"></script>
+    <script src="/sena/ejercicioVenta/js/navegacion.js"></script>
+    <script src="/sena/ejercicioVenta/js/ControlUsuario.js"></script>
+    <script src="/sena/ejercicioVenta/js/Productos.js"></script>
+</head>
+<body onload="InicioProductos();">
+    <header>
+        <!-- navbar-dark es el estilo y color de los elementos -->
+        <!-- bg-dark configura el estilo y color de la barra de navegación -->
+            <nav class="navbar navbar-dark bg-dark navbar-expand-md" >
+                <a class="navbar-brand" href=" /sena/ejercicioVenta/">Parqueadero</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/sena/ejercicioVenta/">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/sena/ejercicioVenta/listaProductos.html">Lista Productos</a>
+                    </li>
+                    </ul>
+                    <ul class="navbar-nav ">
+                        <div class="btn-group">
+                            <button id="NombreUsuario" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                <button class="dropdown-item" type="button" onclick="IngresoConfiguracion();">Configuración</button>
+                                <button class="dropdown-item" type="button" onclick="CerrarSesion();">Cerrar Sesión</button>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <div class="container-fluid">
+        <h1>Lista de Productos</h1>
+        <hr>
+        <a class="btn btn-dark" href="listaProductos.html">Cancelar</a>
+        <a class="btn btn-success" onclick="GuardarProductos();">Guardar</a>
+        <br>
+        <br>
+        
+        <div class="row">
+            <div class="col col-xl-6 col-12">
+                <label for="CampoCodigo">Codigo:</label>
+                <input id="CampoCodigo" class="form-control" type="text">
+            </div>
+            <div class="col col-xl-6 col-12">
+                <label for="CampoNombre">Nombre:</label>
+                <input id="CampoNombre" class="form-control" type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xl-6 col-12">
+                <label for="CampoDescripción">Descripción</label>
+                <input id="CampoDescripción" class="form-control" type="text">
+            </div>
+            <div class="col col-xl-6 col-12">
+                <label for="CampoCantidad">Cantidad</label>
+                <input id="CampoCantidad" class="form-control" type="text">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
