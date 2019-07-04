@@ -27,6 +27,7 @@ function GuardarProductos(){
         url: 'Productos.php',
         success: function(data){
             
+            
         },
         error: function(data){
             alert("error al consultar Lista Productos");

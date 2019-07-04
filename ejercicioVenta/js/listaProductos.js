@@ -18,7 +18,9 @@ function consultarListaProductos(){
         // URL a la que se enviará la solicitud Ajax
         url: 'Productos.php',
         success: function(data){
-            console.log(data);
+            var Consulta=JSON.parse(data);
+            tabla.innerHTML="";
+            var CeldaNombre=document.createElement('')
         },
         error: function(data){
             alert("error al consultar Lista Productos");

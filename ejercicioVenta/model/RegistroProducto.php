@@ -24,14 +24,18 @@ function ConsultaListaProducto(){
         die("Error al Registrar");  
     }
     while($fila=mysqli_fetch_array($resultado)){
-        $retorno=array(
-            'id'=>$fila['id'],
+        $prueba=array(
+            'id'=>(int)$fila['id'],
             'codigo'=>$fila['codigo'],
             'nombre'=>$fila['nombre'],
             'descripcion'=>$fila['descripcion'],
-            'cantidad'=>$fila['cantidad']
+            'cantidad'=>(int)$fila['cantidad']
         );
+        $retorno.=json_encode ($prueba);
+        
+
     }
+    // $retorno = mysqli_fetch_array($resultado, MYSQLI_ASSOC);
     return $retorno;
 }
 
